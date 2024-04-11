@@ -6,7 +6,7 @@ import random
 class Macro():
 
     def __init__(self):
-        self.sleep=0.4
+        self.sleep = 0.4
 
     def basic(self, key):
         time.sleep(self.sleep)    
@@ -105,11 +105,11 @@ class Macro():
         pyautogui.keyDown('left')
         pyautogui.keyUp('left')        
 
-    def super_set(self):
+    def left_many_macro(self):
         self.time_attack()
         self.moving_attack()
 
-    def macro_final(self):
+    def youtube_macro(self):
         for i in range(30):
             time.sleep(self.sleep) 
             pyautogui.keyDown('right')
@@ -123,8 +123,27 @@ class Macro():
             time.sleep(self.sleep) 
             pyautogui.keyUp('left')
             pyautogui.keyUp('q')
-            
+    
+    def jump_macro(self):
+        self.sleep = 0.45
+        self.super_left_jump()
+        self.basic('q')
+        self.super_right_jump()
+        self.basic('q')
+        self.super_left_2_jump()
+        self.basic('q')
+        self.super_right_2_jump()
+        self.basic('q')
         
-
+    def jump_macro2(self):
+        self.sleep = 0.45
+        self.super_left_2_jump()
+        self.random_attack()
+        self.super_right_jump()
+        self.random_attack()
+        self.super_left_jump()
+        self.random_attack()
+        self.super_right_2_jump()
+        self.random_attack()
             
 ## left 
