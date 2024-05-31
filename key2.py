@@ -48,16 +48,12 @@ def pattern3():
 
 try:
     counter = 0
-    pyautogui.keyDown('c')
-    pyautogui.keyUp('c')
+
     while True:
         counter +=1
-        # mc.macro_final()
-        mc.jump_macro2()
-        # mc.youtube_macro()
-        if counter == 30:
-            pyautogui.keyDown('c')
-            pyautogui.keyUp('c')
+        mc.left_many_macro()
+        # mc.jump_macro2()
+        # mc.real_macro()
         if counter == 100:
             pyautogui.keyDown('a')
             pyautogui.keyUp('a')
